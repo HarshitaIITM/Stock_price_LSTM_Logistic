@@ -1,22 +1,37 @@
-# Stock_price_LSTM_Logistic
-This document describes a project focused on predicting stock prices using machine learning techniques, specifically Long Short-Term Memory (LSTM) neural networks. The project is part of a capstone project for the Udacity Machine Learning Nanodegree and was conducted by Rajat Dhyani.
 
-Project Overview:
-The primary goal of the project is to predict the closing price of stocks, particularly for the S&P 500, using historical stock prices and trading volumes. LSTM networks, a type of recurrent neural network (RNN), were chosen for this task because of their ability to learn from time-series data, capturing long-term dependencies.
+## Project Overview
 
-Problem Statement:
-The project aims to accurately predict the future closing price of a stock for a given period using LSTM models. The challenge is to develop a model that can make predictions based on historical data, potentially offering insights into future stock market trends.
 
-Data and Analysis:
-The dataset used in this project includes historical stock prices for Alphabet Inc. (Google) from January 1, 2005, to June 20, 2017. The dataset contains features like opening, high, low, closing prices, and trading volume. The analysis suggests that the high and low prices are less important for predicting closing prices, so these features were removed during preprocessing.
+Investment firms, hedge funds and even individuals have been using financial models to better understand market behavior and make profitable investments and trades. A wealth of information is available in the form of historical stock prices and company performance data, suitable for machine learning algorithms to process.
 
-Methodology:
-The data preprocessing involved normalizing the data and splitting it into training and testing sets. The project implemented a benchmark model using Linear Regression and then compared it to an LSTM model built using the Keras library. The LSTM model was optimized by tuning various parameters, including the number of layers, nodes, and epochs.
+Can we actually predict stock prices with machine learning? Investors make educated guesses by analyzing data. They'll read the news, study the company history, industry trends and other lots of data points that go into making a prediction. The prevailing theories is that stock prices are totally random and unpredictable but that raises the question why top firms like Morgan Stanley and Citigroup hire quantitative analysts to build predictive models. We have this idea of a trading floor being filled with adrenaline infuse men with loose ties running around yelling something into a phone but these days they're more likely to see rows of machine learning experts quietly sitting in front of computer screens. In fact about 70% of all orders on Wall Street are now placed by software, we're now living in the age of the algorithm.
 
-Results:
-The project's success was measured using metrics such as Mean Squared Error (MSE) and Root Mean Squared Error (RMSE). The LSTM model's performance was compared to the Linear Regression model, showing the advantages of using deep learning techniques for time-series prediction.
+This project utilizes Deep Learning models, Long-Short Term Memory (LSTM) Neural Network algorithm, to predict stock prices. For data with timeframes recurrent neural networks (RNNs) come in handy but recent researches have shown that LSTM, networks are the most popular and useful variants of RNNs. 
 
-Conclusion:
-The project concludes that LSTM networks are effective for predicting stock prices, providing better accuracy than traditional linear regression models. The analysis also highlights the importance of careful data preprocessing and parameter tuning in building an effective predictive model.
+I have used Keras to build a LSTM to predict stock prices using historical closing price and trading volume and visualize both the predicted price values over time and the optimal parameters for the model.
 
-This project demonstrates the potential of using deep learning models, specifically LSTM networks, for financial forecasting, showing their applicability in real-world scenarios like stock price prediction.
+
+## Problem Highlights
+*The challenge of this project is to accurately predict the future closing value of a given stock across a given period of time in the future.  For this project I have used a Long Short Term Memory networks – usually just called “LSTMs” to predict the closing price of the S&P 500 using a dataset of past prices*
+
+* **Achievements:**
+  * Built a model to accurately predict the future closing price of a given stock, using Long Short Term Memory Neural net algorithm. 
+  * Achieved Mean Squared Error rating of just 0.00093063.
+
+Things i have learnt by completing this project:
+* How to apply deep learning techniques: Long Short Term Memory Neural Network algorithms.
+* How to use keras-tensorflow library.
+* How to collect and preprocess given data.
+* How to analyze model's performance.
+* How to optimise Long Short Term Memory Neural Network algortithm, to ensure increase in postive results.
+
+## Software and Libraries
+This project uses the following software and Python libraries:
+
+* [Python 2.7](https://www.python.org/download/releases/2.7/)
+* [NumPy](http://www.numpy.org/)
+* [pandas](http://pandas.pydata.org/)
+* [Keras](https://keras.io/)
+* [Tensor-flow](https://www.tensorflow.org)
+* [Jupyter Notebook](http://ipython.org/notebook.html)
+
